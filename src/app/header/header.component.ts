@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  public headerMenu : String[] = ["SharpNotes","Blog", "About"]
+  public headerMenu : String[] = ["Notes","Blog", "About"]
 
   constructor() { }
 
