@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sharp-notes-ui"
+    }
+  },
+  "defaultProject": "sharp-notes-ui",
+  "cli": {
+    "analytics": "c7463c1a-b6ee-4a58-9aa3-68b3bd140fea"
+  }
 }
