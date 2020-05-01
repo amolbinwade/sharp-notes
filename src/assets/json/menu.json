@@ -1,0 +1,45 @@
+{    
+    "menulist" : [
+        {
+            "name" : "Notes",
+            "isHeaderMenu": false,
+            "submenu" : [
+                {
+                    "name": "Java",
+                    "isHeaderMenu":false,
+                    "submenu": [
+                        {
+                            "name": "OOPS Concepts"
+                        },
+                        {
+                            "name": "Serializations"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blog",
+            "isHeaderMenu": true,
+            "submenu" : [
+                {
+                    "name": "Java",
+                    "isHeaderMenu":false,
+                    "submenu": [
+                        {
+                            "name": "How I Created this website?"
+                        },
+                        {
+                            "name": "Technologies used in this website"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "About",
+            "isHeaderMenu": true
+        }  
+    ]  
+    
+}
