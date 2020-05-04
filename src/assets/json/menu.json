@@ -23,16 +23,12 @@
             "isHeaderMenu": true,
             "submenu" : [
                 {
-                    "name": "Java",
-                    "isHeaderMenu":false,
-                    "submenu": [
-                        {
-                            "name": "How I Created this website?"
-                        },
-                        {
-                            "name": "Technologies used in this website"
-                        }
-                    ]
+                    "name": "How I Created this website?",
+                    "isHeaderMenu":false                                    
+                },
+                {
+                    "name": "Design of this website",
+                    "isHeaderMenu":false 
                 }
             ]
         },

@@ -23,7 +23,7 @@ describe('MenuComponent', () => {
         MatIconModule,
         MatListModule,
         MatSidenavModule,
-        MatToolbarModule,
+        MatToolbarModule        
       ]
     }).compileComponents();
   }));

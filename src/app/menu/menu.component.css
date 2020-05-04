@@ -3,11 +3,10 @@
 }
 
 .sidenav {
-  margin-top: 5%;
   width: 200px;
 }
 
-.sidenav .mat-toolbar {
+.sidenav.mat-toolbar {
   margin-left: 0px;
   background: inherit;
 }
@@ -30,8 +29,11 @@
 }
 
 .toolbar {
-  height: 10%;  
+  height: 40px;  
+  position: absolute;
 }
+
+
 
 
 
