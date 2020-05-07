@@ -1,0 +1,60 @@
+{
+    "parent": "Java",
+    "id": "102",
+    "name": "Serialization",
+    "slides": [
+        {
+            "number": 1,
+            "slideId": "Serialization Building Blocks",
+            "cards": [
+                {
+                    "title": "What is Object Oriented Programming?",
+                    "details": [
+                        "This is object oriented programming."
+                    ]
+                },
+                {
+                    "title": "Concepts",
+                    "details": [
+                        "1. Serialization",
+                        "2. Serialization",
+                        "3. Inheritance",
+                        "4. Polymorphism"
+                    ]
+                },
+                {
+                    "title": "Serialization Examples",
+                    "details": [
+                        "Give some good Serialization examples here."
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "slideId": "Serialization Abstraction",
+            "cards": [
+                {
+                    "title": "What is Serialization Abstraction in Object Oriented Programming?",
+                    "details": [
+                        "This is object oriented programming."
+                    ]
+                },
+                {
+                    "title": "Serialization Abstraction",
+                    "details": [
+                        "In common terms, abstraction means a thing which exists as an idea and may not have physical existence or can have many physical appearances. E.g. chair as concept and physically there are many types of chairs.",
+                        "In programming language abstraction means a layer behind which all the implementation details are hidden. And only this layer is visible to client programs.",
+                        "In java abstraction is achieved using interfaces and abstract classes."
+                    ]
+                },
+                {
+                    "title": "Serialization xamples",
+                    "details": [
+                        "Give some good examples here."
+                    ]
+                }
+            ]
+        }
+    ]
+}

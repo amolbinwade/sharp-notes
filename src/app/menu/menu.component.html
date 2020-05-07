@@ -22,7 +22,7 @@
       </mat-nav-list>
       <div *ngFor="let menu of getMenuItems()">
         <mat-expansion-panel 
-        *ngIf="(menu.submenu && !menu.isHeaderMenu) || (menu.isHeaderMenu && (isHandset$ | async)); else headerLabel" 
+        *ngIf="(menu.submenu && !menu.isHeaderMenu) || (menu.submenu && menu.isHeaderMenu && (isHandset$ | async)); else headerLabel" 
         class="mat-elevation-z0" [expanded]="(isHandset$ | async) === false">
           <mat-expansion-panel-header>
             <mat-panel-title>
@@ -39,7 +39,7 @@
                   </mat-panel-title>
                 </mat-expansion-panel-header>
                 <mat-nav-list>
-                  <a *ngFor="let menuSubItem of menuItem.submenu" mat-list-item href="#">
+                  <a *ngFor="let menuSubItem of menuItem.submenu" mat-list-item (click)="selectMenuSubItem(menuSubItem)">
                     {{ menuSubItem.name }}</a>
                 </mat-nav-list>
               </mat-expansion-panel>
@@ -64,6 +64,6 @@
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-details></app-details>
+    <app-details [topicId]="getTopicId()"></app-details>
   </mat-sidenav-content>
 </mat-sidenav-container>

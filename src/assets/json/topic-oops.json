@@ -1,0 +1,60 @@
+{
+    "parent": "Java",
+    "id": "101",
+    "name": "OOPS Concepts",
+    "slides": [
+        {
+            "number": 1,
+            "slideId": "Building Blocks",
+            "cards": [
+                {
+                    "title": "What is Object Oriented Programming?",
+                    "details": [
+                        "This is object oriented programming."
+                    ]
+                },
+                {
+                    "title": "Concepts",
+                    "details": [
+                        "1. Abstraction",
+                        "2. Encapsulation",
+                        "3. Inheritance",
+                        "4. Polymorphism"
+                    ]
+                },
+                {
+                    "title": "Examples",
+                    "details": [
+                        "Give some good examples here."
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "slideId": "Abstraction",
+            "cards": [
+                {
+                    "title": "What is Abstraction in Object Oriented Programming?",
+                    "details": [
+                        "This is object oriented programming."
+                    ]
+                },
+                {
+                    "title": "Abstraction",
+                    "details": [
+                        "In common terms, abstraction means a thing which exists as an idea and may not have physical existence or can have many physical appearances. E.g. chair as concept and physically there are many types of chairs.",
+                        "In programming language abstraction means a layer behind which all the implementation details are hidden. And only this layer is visible to client programs.",
+                        "In java abstraction is achieved using interfaces and abstract classes."
+                    ]
+                },
+                {
+                    "title": "Examples",
+                    "details": [
+                        "Give some good examples here."
+                    ]
+                }
+            ]
+        }
+    ]
+}
