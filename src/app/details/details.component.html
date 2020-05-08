@@ -1,2 +1,7 @@
-<app-slide [selectedSlide]="getSelectedSlide()"></app-slide>
-<div> {{ topicId }} </div>
+<div *ngIf="isHomeMenuSelected(); else topic ">
+    <app-home-page></app-home-page>
+</div>
+<ng-template #topic>
+    <app-slide [selectedSlide]="getSelectedSlide()"></app-slide>
+    <div> {{ topicId }} </div>
+</ng-template>

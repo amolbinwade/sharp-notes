@@ -1,31 +1,29 @@
 {
     "parent": "Java",
     "id": "101",
-    "name": "OOPS Concepts",
+    "name": "OOP Concepts",
+    "details": [
+        "This is a summary on object oriented programming."
+    ],
     "slides": [
         {
             "number": 1,
             "slideId": "Building Blocks",
             "cards": [
                 {
-                    "title": "What is Object Oriented Programming?",
+                    "title": "What are the building blocks of Java object oriented Programming?",
                     "details": [
                         "This is object oriented programming."
                     ]
                 },
                 {
                     "title": "Concepts",
+                    "imagePath": "img/oop1.png",
                     "details": [
                         "1. Abstraction",
                         "2. Encapsulation",
                         "3. Inheritance",
                         "4. Polymorphism"
-                    ]
-                },
-                {
-                    "title": "Examples",
-                    "details": [
-                        "Give some good examples here."
                     ]
                 }
             ]

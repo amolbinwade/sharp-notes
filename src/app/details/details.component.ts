@@ -11,6 +11,7 @@ import slidesJson102 from '../../assets/json/topic-serialization.json';
 })
 export class DetailsComponent implements OnInit {
   @Input() topicId:String;
+  @Input() menuId:String;
 
   selectedSlide = slidesJson101;
 
@@ -27,6 +28,10 @@ export class DetailsComponent implements OnInit {
     } else {
       return slidesJson102;
     }
+  }
+
+  isHomeMenuSelected(){
+    return this.menuId == "001";
   }
 
 }

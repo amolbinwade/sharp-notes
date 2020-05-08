@@ -1,7 +1,13 @@
 {    
     "menulist" : [
         {
+            "name": "Home",
+            "id" : "001",
+            "isHeaderMenu": false
+        },
+        {
             "name" : "Notes",
+            "id": "100",
             "isHeaderMenu": false,
             "submenu" : [
                 {
@@ -9,7 +15,7 @@
                     "isHeaderMenu":false,
                     "submenu": [
                         {
-                            "name": "OOPS Concepts",
+                            "name": "OOP Concepts",
                             "id": "101"
                         },
                         {
@@ -22,6 +28,7 @@
         },
         {
             "name": "Blog",
+            "id" : "200",
             "isHeaderMenu": true,
             "submenu" : [
                 {

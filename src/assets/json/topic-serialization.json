@@ -2,6 +2,9 @@
     "parent": "Java",
     "id": "102",
     "name": "Serialization",
+    "details": [
+        "This is a summary on serialization."
+    ],
     "slides": [
         {
             "number": 1,

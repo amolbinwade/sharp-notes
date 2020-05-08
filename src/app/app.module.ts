@@ -15,6 +15,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { DetailsComponent } from './details/details.component';
 import { SlideComponent } from './details/slide/slide.component';
 import {MatCardModule} from '@angular/material/card';
+import { HomePageComponent } from './details/home-page/home-page.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     AppComponent,
     MenuComponent,
     DetailsComponent,
-    SlideComponent
+    SlideComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

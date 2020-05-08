@@ -12,3 +12,11 @@
     margin-right: 25%;
     padding-left: 30%;
 }
+
+.slideTitle.mat-card-title{
+    font-size: medium;
+}
+
+.title.mat-card-title{
+    background-color: azure;
+}

@@ -5,25 +5,26 @@
   </button>
   <span>SharpNotes</span>
   <div *ngFor="let menuItem of getMenuItems()">
-    <a *ngIf="!(isHandset$ | async)" class="tool-link" href="#">{{ menuItem.name }}</a>
+    <a *ngIf="!(isHandset$ | async)" class="tool-link" href="#" (click)="menuClicked(menuItem)">{{ menuItem.name }}</a>
   </div>
 </mat-toolbar>
 
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" [fixedTopGap]="40" [fixedInViewport]=true [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+  <mat-sidenav #drawer class="sidenav" [fixedTopGap]="40" [fixedInViewport]=true
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false">
 
 
     <mat-accordion>
       <mat-nav-list *ngIf="(isHandset$ | async)">
         <a mat-list-item href="#" (click)="drawer.toggle()">
-          Home
+          Back
         </a>
       </mat-nav-list>
       <div *ngFor="let menu of getMenuItems()">
-        <mat-expansion-panel 
-        *ngIf="(menu.submenu && !menu.isHeaderMenu) || (menu.submenu && menu.isHeaderMenu && (isHandset$ | async)); else headerLabel" 
-        class="mat-elevation-z0" [expanded]="(isHandset$ | async) === false">
+        <mat-expansion-panel
+          *ngIf="(menu.submenu && !menu.isHeaderMenu) || (menu.submenu && menu.isHeaderMenu && (isHandset$ | async)); else headerLabel"
+          class="mat-elevation-z0" [expanded]="(isHandset$ | async) === false">
           <mat-expansion-panel-header>
             <mat-panel-title>
               {{ menu.name }}
@@ -31,15 +32,16 @@
           </mat-expansion-panel-header>
           <mat-nav-list>
             <div *ngFor="let menuItem of menu.submenu">
-              <mat-expansion-panel *ngIf="menuItem.submenu; else menuLabel" 
-              class="mat-elevation-z0" [expanded]="(isHandset$ | async) === false">
+              <mat-expansion-panel *ngIf="menuItem.submenu; else menuLabel" class="mat-elevation-z0"
+                [expanded]="(isHandset$ | async) === false">
                 <mat-expansion-panel-header>
                   <mat-panel-title>
                     {{ menuItem.name }}
                   </mat-panel-title>
                 </mat-expansion-panel-header>
                 <mat-nav-list>
-                  <a *ngFor="let menuSubItem of menuItem.submenu" mat-list-item (click)="selectMenuSubItem(menuSubItem)">
+                  <a *ngFor="let menuSubItem of menuItem.submenu" mat-list-item
+                    (click)="selectMenuSubItem(menuSubItem)">
                     {{ menuSubItem.name }}</a>
                 </mat-nav-list>
               </mat-expansion-panel>
@@ -60,10 +62,10 @@
         </ng-template>
       </div>
     </mat-accordion>
-    
+
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-details [topicId]="getTopicId()"></app-details>
+    <app-details [topicId]="getTopicId()" [menuId]="getMenuId()"></app-details>
   </mat-sidenav-content>
 </mat-sidenav-container>

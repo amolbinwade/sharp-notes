@@ -12,7 +12,9 @@ import MenuJson from '../../assets/json/menu.json';
 })
 export class MenuComponent {
 
-  topicId:String="101";
+  topicId:String="001";
+  menuId:String="001";
+
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -33,6 +35,14 @@ export class MenuComponent {
 
   getTopicId(){
     return this.topicId;
+  }
+
+  menuClicked(menuItem){
+    this.menuId = menuItem.id;
+  }
+
+  getMenuId(){
+    return this.menuId;
   }
 
 }

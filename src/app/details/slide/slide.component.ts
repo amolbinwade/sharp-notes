@@ -10,7 +10,7 @@ import slidesJson1 from '../../../assets/json/topic-oops.json';
 export class SlideComponent implements OnInit {
 
   @Input() selectedSlide;
-  slidesJson = slidesJson1;
+  slidesJson = this.selectedSlide;
   ;
   index = 0;
   constructor() { }
@@ -27,6 +27,14 @@ export class SlideComponent implements OnInit {
     if(this.index > 0){
       this.index = this.index-1;
     }
+  }
+
+  getImagePath(card){    
+    if(card.imagePath){
+      console.log("assets/" + card.imagePath);
+      return "assets/" + card.imagePath;
+    }   
+    return "";
   }
 
 }
