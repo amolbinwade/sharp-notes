@@ -1,0 +1,91 @@
+{
+    "namespace": "com.sharpnotes",
+    "type": "record",
+    "name": "menu",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "menuItemList",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "menuItem",
+                    "fields": [
+                        {
+                            "name": "menuItemId",
+                            "type": "string"
+                        },
+                        {
+                            "name": "menuItemTitle",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sectionList",
+                            "type": {
+                                "type": "array",
+                                "items": {
+                                    "type": "record",
+                                    "name": "section",
+                                    "fields": [
+                                        {
+                                            "name": "id",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "sectionTitle",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "topicList",
+                                            "type": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "record",
+                                                    "name": "topic",
+                                                    "fields": [
+                                                        {
+                                                            "name": "id",
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "nampe": "topicTitle",
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "name": "topicSlides",
+                                                            "type": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "record",
+                                                                    "name": "slide",
+                                                                    "fields": [
+                                                                        {
+                                                                            "name": "slideIndex",
+                                                                            "type": "int"
+                                                                        },
+                                                                        {
+                                                                            "name": "slideTitle",
+                                                                            "type": "string"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

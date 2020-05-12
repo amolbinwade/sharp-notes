@@ -1,0 +1,15 @@
+{
+    "namespace": "com.sharpnotes",
+    "type": "record",
+    "name": "menuItem",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "menuItemTitle",
+            "type": "string"
+        }
+    ]
+}

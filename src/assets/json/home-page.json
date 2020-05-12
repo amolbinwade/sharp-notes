@@ -1,0 +1,32 @@
+{
+    "id": "000",
+    "homeTitle": "Home",
+    "sectionList": [
+        {
+            "sectionId": "100",
+            "sectionTitle": "Java"
+        },
+        {
+            "sectionId": "500",
+            "sectionTitle": "Spring"
+        }
+    ],
+    "recentTopicList": [
+        {
+            "id": "101",
+            "section-id": "100",
+            "topicTitle": "OOP Concepts",
+            "topicSummary": [
+                "This is a summary on object oriented programming."
+            ]
+        },
+        {
+            "id": "102",
+            "section-id": "100",
+            "topicTitle": "Serialization",
+            "topicSummary": [
+                "This is a summary on serializationr."
+            ] 
+        }
+    ]
+}

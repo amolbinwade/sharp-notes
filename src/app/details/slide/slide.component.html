@@ -1,21 +1,21 @@
 <div class="card-div" flex=33>
     <mat-card class="slide-1">
-        <mat-card-title class="title">{{ selectedSlide.name }}</mat-card-title>
+        <mat-card-title class="topicTitle">{{ selectedSlide.topicTitle }}</mat-card-title>
         <br>
         <mat-card-content>
-            <div *ngFor="let row of selectedSlide.details">
+            <div *ngFor="let row of selectedSlide.topicSummary">
                 {{ row }}
             </div>
         </mat-card-content>
-        <mat-card-title class="slideTitle">{{ selectedSlide.slides[index].slideId }}</mat-card-title>
+        <mat-card-title class="slideTitle">{{ selectedSlide.topicSlides[index].slideTitle }}</mat-card-title>
     </mat-card>
-    <mat-card class="slide" *ngFor="let card of selectedSlide.slides[index].cards">
+    <mat-card class="slide" *ngFor="let card of selectedSlide.topicSlides[index].slideCards">
 
-        <mat-card-subtitle>{{ card.title }}</mat-card-subtitle>
+        <mat-card-subtitle>{{ card.cardTitle }}</mat-card-subtitle>
         <img mat-card-image [src]="getImagePath(card)">
     
         <mat-card-content>
-            <div *ngFor="let row of card.details">
+            <div *ngFor="let row of card.cardDetails">
                 {{ row }}
             </div>
 

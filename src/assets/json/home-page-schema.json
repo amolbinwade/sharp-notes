@@ -1,0 +1,67 @@
+{
+    "namespace": "com.sharpnotes",
+    "type": "record",
+    "name": "homePage",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "homeTitle",
+            "type": "string",
+            "default": "Home"
+        },
+        {
+            "name": "SectionList",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "section",
+                    "fields": [
+                        {
+                            "name": "sectionId",
+                            "type": "string"
+                        },
+                        {
+                            "name": "sectionTitle",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "recentTopicList",
+            "type": {
+                "type": "array",
+                "items":{
+                    "type":"record",
+                    "name": "topic",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "type": "string"
+                        },
+                        {
+                            "name": "section-id",
+                            "type": "string"
+                        },
+                        {
+                            "nampe": "topicTitle",
+                            "type": "string"
+                        },
+                        {
+                            "name": "topicSummary",
+                            "type": {
+                                "type": "array",
+                                "items": "string"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

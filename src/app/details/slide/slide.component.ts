@@ -20,7 +20,7 @@ export class SlideComponent implements OnInit {
 
   next(){
     this.index = this.index+1;
-    console.log(this.selectedSlide.slides[0].slideId)
+    console.log(this.selectedSlide.topicSlides[0].slideTitle)
   }
 
   previous(){
@@ -30,9 +30,9 @@ export class SlideComponent implements OnInit {
   }
 
   getImagePath(card){    
-    if(card.imagePath){
-      console.log("assets/" + card.imagePath);
-      return "assets/" + card.imagePath;
+    if(card.cardImagePath){
+      console.log("assets/" + card.cardImagePath);
+      return "assets/" + card.cardImagePath;
     }   
     return "";
   }

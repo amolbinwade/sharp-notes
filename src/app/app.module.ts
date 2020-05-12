@@ -16,6 +16,7 @@ import { DetailsComponent } from './details/details.component';
 import { SlideComponent } from './details/slide/slide.component';
 import {MatCardModule} from '@angular/material/card';
 import { HomePageComponent } from './details/home-page/home-page.component';
+import { MenuframeComponent } from './menuframe/menuframe.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HomePageComponent } from './details/home-page/home-page.component';
     MenuComponent,
     DetailsComponent,
     SlideComponent,
-    HomePageComponent
+    HomePageComponent,
+    MenuframeComponent
   ],
   imports: [
     BrowserModule,

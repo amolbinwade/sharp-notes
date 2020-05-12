@@ -1,25 +1,41 @@
-{
-    "parent": "Java",
+{   
     "id": "101",
-    "name": "OOP Concepts",
-    "details": [
+    "section-id": "100",
+    "topicTitle": "OOP Concepts",
+    "topicSummary": [
         "This is a summary on object oriented programming."
     ],
-    "slides": [
+    "topicSlides": [
         {
-            "number": 1,
-            "slideId": "Building Blocks",
-            "cards": [
+            "slideIndex": 1,
+            "slideTitle": "Contents",
+            "slideCards": [
                 {
-                    "title": "What are the building blocks of Java object oriented Programming?",
-                    "details": [
+                    "cardIndex": 1,
+                    "cardTitle":"",
+                    "cardDetails": [
+                        "1. Building Blocks",
+                        "2. Serializations"
+                    ]
+                }     
+            ]
+        },
+        {
+            "slideIndex": 2,
+            "slideTitle": "Building Blocks",
+            "slideCards": [
+                {
+                    "cardIndex": 1,
+                    "cardTitle": "What are the building blocks of Java object oriented Programming?",
+                    "cardDetails": [
                         "This is object oriented programming."
                     ]
                 },
                 {
-                    "title": "Concepts",
-                    "imagePath": "img/oop1.png",
-                    "details": [
+                    "cardIndex": 2,
+                    "cardTitle": "Concepts",
+                    "cardImagePath": "img/oop1.png",
+                    "cardDetails": [
                         "1. Abstraction",
                         "2. Encapsulation",
                         "3. Inheritance",
@@ -29,26 +45,29 @@
             ]
         },
         {
-            "number": 2,
-            "slideId": "Abstraction",
-            "cards": [
+            "slideIndex": 3,
+            "slideTitle": "Abstraction",
+            "slideCards": [
                 {
-                    "title": "What is Abstraction in Object Oriented Programming?",
-                    "details": [
+                    "cardIndex": 1,
+                    "cardTitle": "What is Abstraction in Object Oriented Programming?",
+                    "cardDetails": [
                         "This is object oriented programming."
                     ]
                 },
                 {
-                    "title": "Abstraction",
-                    "details": [
+                    "cardIndex": 2,
+                    "cardTitle": "Abstraction",
+                    "cardDetails": [
                         "In common terms, abstraction means a thing which exists as an idea and may not have physical existence or can have many physical appearances. E.g. chair as concept and physically there are many types of chairs.",
                         "In programming language abstraction means a layer behind which all the implementation details are hidden. And only this layer is visible to client programs.",
                         "In java abstraction is achieved using interfaces and abstract classes."
                     ]
                 },
                 {
-                    "title": "Examples",
-                    "details": [
+                    "cardIndex": 3,
+                    "cardTitle": "Examples",
+                    "cardDetails": [
                         "Give some good examples here."
                     ]
                 }

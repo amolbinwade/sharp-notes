@@ -1,0 +1,17 @@
+{
+    "id": "menu-000",
+    "menuItemList": [
+        {
+           "menuItemId": "menu-item-001",
+           "menuItemTitle": "Notes" 
+        },
+        {
+            "menuItemId": "menu-item-002",
+            "menuItemTitle": "Blog" 
+         },
+         {
+            "menuItemId": "menu-item-003",
+            "menuItemTitle": "About"
+         }
+    ]
+}

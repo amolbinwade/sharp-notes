@@ -17,6 +17,6 @@
     font-size: medium;
 }
 
-.title.mat-card-title{
-    background-color: azure;
+.topicTitle.mat-card-title{
+    color:blue;
 }

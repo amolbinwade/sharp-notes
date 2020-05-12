@@ -1,1 +1,28 @@
-<p>home-page works!</p>
+<div class="card-div" flex=33>
+    <mat-card class="slide-1">
+        <mat-card-title class="topicTitle">{{ homeData.homeTitle }}</mat-card-title>
+        <mat-card-content>
+            <mat-list>
+                <div mat-subheader>Subjects</div>
+
+                <mat-list-item *ngFor="let section of homeData.sectionList">
+                    <a href="#">
+                        {{ section.sectionTitle }}
+                    </a>
+                </mat-list-item>
+
+            </mat-list>
+            <mat-divider></mat-divider>
+            <mat-list>
+                <div mat-subheader>Recent Topics</div>
+
+                <mat-list-item *ngFor="let topic of homeData.recentTopicList">
+                    <a href="#">
+                        {{ topic.topicTitle }}
+                    </a>
+                </mat-list-item>
+
+            </mat-list>
+        </mat-card-content>
+    </mat-card>
+</div>

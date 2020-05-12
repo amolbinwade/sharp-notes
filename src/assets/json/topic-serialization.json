@@ -1,24 +1,26 @@
 {
-    "parent": "Java",
     "id": "102",
-    "name": "Serialization",
-    "details": [
-        "This is a summary on serialization."
+    "section-id": "100",
+    "topicTitle": "Serialization",
+    "topicSummary": [
+        "This is a summary on serializationr."
     ],
-    "slides": [
+    "topicSlides": [
         {
-            "number": 1,
-            "slideId": "Serialization Building Blocks",
-            "cards": [
+            "slideIndex": 1,
+            "slideTitle": "Serialization Building Blocks",
+            "slideCards": [
                 {
-                    "title": "What is Object Oriented Programming?",
-                    "details": [
+                    "cardIndex": 1,
+                    "cardTitle": "What is Object Oriented Programming?",
+                    "cardDetails": [
                         "This is object oriented programming."
                     ]
                 },
                 {
-                    "title": "Concepts",
-                    "details": [
+                    "cardIndex": 2,
+                    "cardTitle": "Concepts",
+                    "cardDetails": [
                         "1. Serialization",
                         "2. Serialization",
                         "3. Inheritance",
@@ -26,34 +28,38 @@
                     ]
                 },
                 {
-                    "title": "Serialization Examples",
-                    "details": [
+                    "cardIndex": 3,
+                    "cardTitle": "Serialization Examples",
+                    "cardDetails": [
                         "Give some good Serialization examples here."
                     ]
                 }
             ]
         },
         {
-            "number": 2,
-            "slideId": "Serialization Abstraction",
-            "cards": [
+            "slideIndex": 2,
+            "slideTitle": "Serialization Abstraction",
+            "slideCards": [
                 {
-                    "title": "What is Serialization Abstraction in Object Oriented Programming?",
-                    "details": [
+                    "cardIndex": 1,
+                    "cardTitle": "What is Serialization Abstraction in Object Oriented Programming?",
+                    "cardDetails": [
                         "This is object oriented programming."
                     ]
                 },
                 {
-                    "title": "Serialization Abstraction",
-                    "details": [
+                    "cardIndex": 2,
+                    "cardTitle": "Serialization Abstraction",
+                    "cardDetails": [
                         "In common terms, abstraction means a thing which exists as an idea and may not have physical existence or can have many physical appearances. E.g. chair as concept and physically there are many types of chairs.",
                         "In programming language abstraction means a layer behind which all the implementation details are hidden. And only this layer is visible to client programs.",
                         "In java abstraction is achieved using interfaces and abstract classes."
                     ]
                 },
                 {
-                    "title": "Serialization xamples",
-                    "details": [
+                    "cardIndex": 3,
+                    "cardTitle": "Serialization xamples",
+                    "cardDetails": [
                         "Give some good examples here."
                     ]
                 }

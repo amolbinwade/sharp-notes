@@ -1,0 +1,15 @@
+{
+    "namespace": "com.sharpnotes",
+    "type": "record",
+    "name": "section",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "sectionTitle",
+            "type": "string"
+        }
+    ]
+}
