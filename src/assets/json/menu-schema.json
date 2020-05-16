@@ -32,7 +32,7 @@
                                     "name": "section",
                                     "fields": [
                                         {
-                                            "name": "id",
+                                            "name": "sectionId",
                                             "type": "string"
                                         },
                                         {
@@ -82,6 +82,10 @@
                                     ]
                                 }
                             }
+                        },
+                        {
+                            "name": "menuItemPath",
+                            "type": "string"
                         }
                     ]
                 }

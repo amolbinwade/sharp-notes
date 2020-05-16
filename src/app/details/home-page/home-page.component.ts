@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import homeJson from '../../../assets/json/home-page.json';
 
 @Component({
   selector: 'app-home-page',
@@ -7,8 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  @Input() homeData;
-
+  homeData = homeJson;
 
   constructor() { }
 

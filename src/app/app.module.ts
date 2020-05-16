@@ -17,6 +17,8 @@ import { SlideComponent } from './details/slide/slide.component';
 import {MatCardModule} from '@angular/material/card';
 import { HomePageComponent } from './details/home-page/home-page.component';
 import { MenuframeComponent } from './menuframe/menuframe.component';
+import { TopiclistComponent } from './details/topiclist/topiclist.component';
+import { BloglistComponent } from './details/bloglist/bloglist.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { MenuframeComponent } from './menuframe/menuframe.component';
     DetailsComponent,
     SlideComponent,
     HomePageComponent,
-    MenuframeComponent
+    MenuframeComponent,
+    TopiclistComponent,
+    BloglistComponent
   ],
   imports: [
     BrowserModule,

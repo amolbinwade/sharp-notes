@@ -17,7 +17,7 @@ export class MenuframeComponent {
       shareReplay()
     );
 
-    constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit(): void {
   }
@@ -27,5 +27,10 @@ export class MenuframeComponent {
   
   menuItemClicked(menuItem){
 
+  }
+
+  getNotesSections(){
+    console.log(MenuJson.menuItemList[0]);
+    return MenuJson.menuItemList[0].sectionList;
   }
 }
