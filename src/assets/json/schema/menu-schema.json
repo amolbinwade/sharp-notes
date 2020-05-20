@@ -48,11 +48,11 @@
                                                     "name": "topic",
                                                     "fields": [
                                                         {
-                                                            "name": "id",
+                                                            "name": "topicId",
                                                             "type": "string"
                                                         },
                                                         {
-                                                            "nampe": "topicTitle",
+                                                            "name": "topicTitle",
                                                             "type": "string"
                                                         },
                                                         {
@@ -78,6 +78,10 @@
                                                     ]
                                                 }
                                             }
+                                        },
+                                        {
+                                            "name" : "expanded",
+                                            "type" : "string"
                                         }
                                     ]
                                 }

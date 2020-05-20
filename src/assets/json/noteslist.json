@@ -1,0 +1,12 @@
+{
+    "sectionList": [
+        {
+            "sectionId": "section-100",
+            "sectionTitle": "Java"
+        },
+        {
+            "sectionId": "section-200",
+            "sectionTitle": "Spring"
+        }
+    ]
+}

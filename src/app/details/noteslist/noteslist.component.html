@@ -1,0 +1,17 @@
+<div class="card-div" flex=33>
+    <mat-card class="slide-1">
+        <mat-card-title class="topicTitle">Notes</mat-card-title>
+        <mat-card-content>
+            <mat-list>
+                <div mat-subheader>Subjects</div>
+
+                <mat-list-item *ngFor="let section of noteslist.sectionList">
+                    <a [href]="getSectionPath(section)">
+                        {{ section.sectionTitle }}
+                    </a>
+                </mat-list-item>
+
+            </mat-list>
+        </mat-card-content>
+    </mat-card>
+</div>

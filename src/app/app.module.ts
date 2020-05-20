@@ -17,8 +17,10 @@ import { SlideComponent } from './details/slide/slide.component';
 import {MatCardModule} from '@angular/material/card';
 import { HomePageComponent } from './details/home-page/home-page.component';
 import { MenuframeComponent } from './menuframe/menuframe.component';
-import { TopiclistComponent } from './details/topiclist/topiclist.component';
 import { BloglistComponent } from './details/bloglist/bloglist.component';
+import { NoteslistComponent } from './details/noteslist/noteslist.component';
+import { AboutComponent } from './details/about/about.component';
+import { SectionComponent } from './details/noteslist/section/section.component';
 
 
 @NgModule({
@@ -28,9 +30,11 @@ import { BloglistComponent } from './details/bloglist/bloglist.component';
     DetailsComponent,
     SlideComponent,
     HomePageComponent,
-    MenuframeComponent,
-    TopiclistComponent,
-    BloglistComponent
+    MenuframeComponent,    
+    BloglistComponent,
+    NoteslistComponent,
+    AboutComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
 {
-    "id": "102",
-    "section-id": "100",
+    "id": "topic-102",
+    "sectionId": "section-100",
     "topicTitle": "Serialization",
     "topicSummary": [
-        "This is a summary on serializationr."
+        "This is a summary on serialization."
     ],
     "topicSlides": [
         {
@@ -12,9 +12,9 @@
             "slideCards": [
                 {
                     "cardIndex": 1,
-                    "cardTitle": "What is Object Oriented Programming?",
+                    "cardTitle": "What is serialization?",
                     "cardDetails": [
-                        "This is object oriented programming."
+                        "This is summary of serialization."
                     ]
                 },
                 {
@@ -58,7 +58,7 @@
                 },
                 {
                     "cardIndex": 3,
-                    "cardTitle": "Serialization xamples",
+                    "cardTitle": "Serialization Examples",
                     "cardDetails": [
                         "Give some good examples here."
                     ]

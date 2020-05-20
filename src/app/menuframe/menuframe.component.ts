@@ -29,8 +29,27 @@ export class MenuframeComponent {
 
   }
 
-  getNotesSections(){
-    console.log(MenuJson.menuItemList[0]);
+  getSections(){
     return MenuJson.menuItemList[0].sectionList;
+  }
+
+  isExpanded(itemList){
+    console.log("+++++++in isExpanded+++"+ itemList.expanded)
+    if(itemList.expanded == "true"){
+      return true;
+    }
+    return false;
+    
+  }
+
+  toggleExpand(itemList){
+    if(itemList.expanded==""){
+      itemList.expanded="true";
+    } else if(itemList.expanded=="true"){
+      itemList.expanded="false";
+    } else{
+      itemList.expanded="true";
+    }
+    
   }
 }

@@ -1,0 +1,81 @@
+{
+    "namespace": "com.sharpnotes",
+    "type": "record",
+    "name": "topic",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "sectionId",
+            "type": "string"
+        },
+        {
+            "name": "topicTitle",
+            "type": "string"
+        },
+        {
+            "name": "topicSummary",
+            "type": {
+                "type":"array",
+                "items":"string"
+            }
+        },
+        {
+            "name": "topicSlides",
+            "type": {
+                "type":"array",
+                "items": {
+                    "type":"record",
+                    "name": "slide",
+                    "fields":[
+                        {
+                            "name": "slideIndex",
+                            "type": "int"
+                        },
+                        {
+                            "name": "slideTitle",
+                            "type": "string"
+                        },
+                        {
+                            "name": "slideCards",
+                            "type": {
+
+                                "type": "array",
+                                "items": {
+                                    "type":"record",
+                                    "name": "card",
+                                    "fields": [
+                                        {
+                                            "name": "cardIndex",
+                                            "type":"int"
+                                        },
+                                        {
+                                            "name": "cardTitle",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "cardImagePath",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "cardDetails",
+                                            "type": {
+                                                "type":"array",
+                                                "items": "string"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+
+        }
+    ]
+}

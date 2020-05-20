@@ -7,15 +7,27 @@
            "sectionList":[
               {
                  "sectionId": "section-100",
-                 "sectionTitle": "Java"
+                 "sectionTitle": "Java",
+                 "topicList": [
+                    {
+                       "topicId": "topic-101",
+                       "topicTitle": "OOP Concepts"
+                    },
+                    {
+                     "topicId": "topic-102",
+                     "topicTitle": "Serialization"
+                    }
+                 ],
+                 "expanded": ""
               },
               {
                "sectionId": "section-200",
-               "sectionTitle": "Spring"
+               "sectionTitle": "Spring",
+               "expanded": ""
             }
 
            ],
-           "menuItemPath": "#"
+           "menuItemPath": "/sections"
         },
         {
             "menuItemId": "menu-item-002",

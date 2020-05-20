@@ -1,0 +1,35 @@
+{
+    "namespace": "com.sharpnotes",
+    "type": "record",
+    "name": "section",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "sectionTitle",
+            "type": "string"
+        },
+        {
+            "name": "topicList",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "topic",
+                    "fields": [
+                        {
+                            "name": "topicId",
+                            "type": "string"
+                        },
+                        {
+                            "name": "topicTitle",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,4 +1,14 @@
 {   
-   "id": 100,
-   "sectionTitle": "java"
+   "id": "section-100",
+   "sectionTitle": "Java",
+   "topicList":[
+      {
+         "topicId":"topic-101",
+         "topicTitle":"OOP Concepts"
+      },
+      {
+         "topicId":"topic-102",
+         "topicTitle":"Serialization"
+      }
+   ]
 }
