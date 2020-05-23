@@ -1,0 +1,5 @@
+<a mat-list-item (click)=toggleExpand(section)>{{ section.sectionTitle }} </a>
+<div *ngIf="isExpanded(section)">
+    <a mat-list-item *ngFor="let topic of section.topicList" class="topic" [href]="getTopicPath(topic, section)">
+        {{ topic.topicTitle }} </a>
+</div>

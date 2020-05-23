@@ -80,8 +80,28 @@
                                             }
                                         },
                                         {
-                                            "name" : "expanded",
-                                            "type" : "string"
+                                            "name": "expanded",
+                                            "type": "string"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "blogPostList",
+                            "type": {
+                                "type": "array",
+                                "items": {
+                                    "type": "record",
+                                    "name": "blogPost",
+                                    "fields": [
+                                        {
+                                            "name": "blogPostId",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "blogPostTitle",
+                                            "type": "string"
                                         }
                                     ]
                                 }

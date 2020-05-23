@@ -23,12 +23,10 @@
         <a mat-list-item *ngIf="(isHandset$ | async)" href="#" (click)="drawer.toggle()">
           Back
         </a>
-        <div *ngFor="let section of getSections()">
-          <a mat-list-item (click)=toggleExpand(section)>{{ section.sectionTitle }} </a>
-          <div *ngIf="isExpanded(section)">
-            <a mat-list-item *ngFor="let topic of section.topicList" class="topic" href="#">-> {{ topic.topicTitle }} </a>
-          </div>
+        <div *ngIf="this.mode == MenuMode.HOME || this.mode == MenuMode.NOTES">
+          <app-notes-menu *ngFor="let section of getSections()" [section]=section></app-notes-menu>
         </div>
+
       </mat-nav-list>
     </mat-accordion>
   </mat-sidenav>

@@ -6,7 +6,7 @@
                 <div mat-subheader>{{ this.json.sectionTitle }}</div>
 
                 <mat-list-item *ngFor="let topic of this.json.topicList">
-                    <a href="#">
+                    <a [href]="this.getTopicPath(topic)">
                         {{ topic.topicTitle }}
                     </a>
                 </mat-list-item>

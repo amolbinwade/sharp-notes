@@ -5,6 +5,7 @@ import { BloglistComponent } from './details/bloglist/bloglist.component';
 import { NoteslistComponent } from './details/noteslist/noteslist.component';
 import { AboutComponent } from './details/about/about.component';
 import { SectionComponent } from './details/noteslist/section/section.component';
+import { TopicComponent } from './details/noteslist/section/topic/topic.component';
 
 
 const routes: Routes = [{
@@ -13,7 +14,11 @@ const routes: Routes = [{
 },
 {
   path: 'sections/:sectionId',
-  component: SectionComponent
+  component: SectionComponent,  
+},
+{
+  path: 'sections/:sectionId/topics/:topicId',
+  component: TopicComponent
 },
 {
   path: 'blog',

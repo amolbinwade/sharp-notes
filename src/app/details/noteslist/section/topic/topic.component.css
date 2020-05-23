@@ -1,0 +1,22 @@
+.slide-1.mat-card {
+    margin-right: 25%;
+    padding-left: 30%;
+    padding-top: 5%;
+}
+
+.slide-1.mat-card-subtitle{
+    padding-top: 10px;
+}
+
+.slide.mat-card {
+    margin-right: 25%;
+    padding-left: 30%;
+}
+
+.slideTitle.mat-card-title{
+    font-size: medium;
+}
+
+.topicTitle.mat-card-title{
+    color:blue;
+}

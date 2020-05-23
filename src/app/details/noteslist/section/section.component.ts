@@ -13,6 +13,7 @@ export class SectionComponent implements OnInit {
   sectionJava = sectionJava;
   sectionSpring = sectionSpring;
   json = this.sectionJava;
+  sectionId:String;
 
   constructor(private route: ActivatedRoute) {
     this.route.params.subscribe(params => this.setJson(params['sectionId']));
@@ -21,7 +22,11 @@ export class SectionComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  setSectionId(sectionId){
+    this.sectionId = sectionId;
+  }
   setJson(sectionId:string){
+    this.setSectionId(sectionId);
     console.log(sectionId);
     if(sectionId == "section-100"){
       console.log("returning Java");
@@ -30,6 +35,11 @@ export class SectionComponent implements OnInit {
       console.log("return spring");
       this.json = this.sectionSpring;
     }
+  }
+
+  getTopicPath(topic){
+    return "sections/"+this.sectionId+"/topics"+"/"+topic.topicId;
+
   }
 
 }

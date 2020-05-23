@@ -23,6 +23,16 @@
               {
                "sectionId": "section-200",
                "sectionTitle": "Spring",
+               "topicList": [
+                  {
+                     "topicId": "topic-201",
+                     "topicTitle": "Spring Core"
+                  },
+                  {
+                   "topicId": "topic-202",
+                   "topicTitle": "Spring Batch"
+                  }
+               ],
                "expanded": ""
             }
 
@@ -31,7 +41,13 @@
         },
         {
             "menuItemId": "menu-item-002",
-            "menuItemTitle": "Blog" ,
+            "menuItemTitle": "Blog",
+            "blogPostList": [
+               {
+                  "blogPostId": "blog-901",
+                  "blogPostTitle": "How this website was created?"
+               }
+            ],
             "menuItemPath": "/blog"
          },
          {

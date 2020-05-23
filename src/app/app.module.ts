@@ -21,6 +21,8 @@ import { BloglistComponent } from './details/bloglist/bloglist.component';
 import { NoteslistComponent } from './details/noteslist/noteslist.component';
 import { AboutComponent } from './details/about/about.component';
 import { SectionComponent } from './details/noteslist/section/section.component';
+import { TopicComponent } from './details/noteslist/section/topic/topic.component';
+import { NotesMenuComponent } from './menuframe/notes-menu/notes-menu.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { SectionComponent } from './details/noteslist/section/section.component'
     BloglistComponent,
     NoteslistComponent,
     AboutComponent,
-    SectionComponent
+    SectionComponent,
+    TopicComponent,
+    NotesMenuComponent
   ],
   imports: [
     BrowserModule,

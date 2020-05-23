@@ -15,4 +15,12 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getSectionPath(section){
+    return "sections/"+section.sectionId;
+  }
+
+  getTopicPath(topic){
+    return "sections/"+topic.sectionId+"/topics/"+topic.topicId;
+  }
+
 }

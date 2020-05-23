@@ -6,7 +6,7 @@
                 <div mat-subheader>Subjects</div>
 
                 <mat-list-item *ngFor="let section of homeData.sectionList">
-                    <a href="#">
+                    <a [href]="this.getSectionPath(section)">
                         {{ section.sectionTitle }}
                     </a>
                 </mat-list-item>
@@ -17,7 +17,7 @@
                 <div mat-subheader>Recent Topics</div>
 
                 <mat-list-item *ngFor="let topic of homeData.recentTopicList">
-                    <a href="#">
+                    <a [href]="this.getTopicPath(topic)">
                         {{ topic.topicTitle }}
                     </a>
                 </mat-list-item>
