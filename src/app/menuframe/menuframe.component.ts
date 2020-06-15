@@ -72,6 +72,10 @@ export class MenuframeComponent {
     return MenuJson.menuItemList[0].sectionList;
   }
 
+  getBlogPosts(){
+    return MenuJson.menuItemList[1].blogPostList;
+  }
+
   isExpanded(itemList){
     if(itemList.expanded == "true"){
       return true;

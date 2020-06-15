@@ -26,6 +26,9 @@
         <div *ngIf="this.mode == MenuMode.HOME || this.mode == MenuMode.NOTES">
           <app-notes-menu *ngFor="let section of getSections()" [section]=section></app-notes-menu>
         </div>
+        <div *ngIf="this.mode == MenuMode.BLOG">
+          <app-blog-menu *ngFor="let blogPost of getBlogPosts()" [blogPost]=blogPost></app-blog-menu>
+        </div>
 
       </mat-nav-list>
     </mat-accordion>

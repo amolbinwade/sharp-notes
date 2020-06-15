@@ -1,6 +1,8 @@
 .slide-1.mat-card {
+    margin-top: 2%;
     margin-right: 25%;
-    padding-left: 30%;
+    margin-left: 10%;
+    padding-left: 15%;
     padding-top: 5%;
 }
 
@@ -9,8 +11,10 @@
 }
 
 .slide.mat-card {
+    margin-top: 2%;
     margin-right: 25%;
-    padding-left: 30%;
+    margin-left: 10%;
+    padding-left: 15%;
 }
 
 .slideTitle.mat-card-title{

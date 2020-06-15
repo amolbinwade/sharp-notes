@@ -1,4 +1,10 @@
 <div class="card-div" flex=33>
+    <mat-card class="slide">
+        <mat-card-actions>
+            <button mat-button (click)="previous()">PREVIOUS</button>
+            <button mat-button (click)="next()">NEXT</button>
+        </mat-card-actions>
+    </mat-card>
     <mat-card class="slide-1">
         <mat-card-title class="topicTitle">{{ this.selectedTopic.topicTitle }}</mat-card-title>
         <br>
@@ -18,10 +24,8 @@
             <div *ngFor="let row of card.cardDetails">
                 {{ row }}
             </div>
-
         </mat-card-content>
     </mat-card>
-
     <mat-card class="slide">
         <mat-card-actions>
             <button mat-button (click)="previous()">PREVIOUS</button>

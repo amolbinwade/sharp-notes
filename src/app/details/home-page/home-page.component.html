@@ -3,7 +3,7 @@
         <mat-card-title class="topicTitle">{{ homeData.homeTitle }}</mat-card-title>
         <mat-card-content>
             <mat-list>
-                <div mat-subheader>Subjects</div>
+                <div mat-subheader>Technical Sections</div>
 
                 <mat-list-item *ngFor="let section of homeData.sectionList">
                     <a [href]="this.getSectionPath(section)">
@@ -14,7 +14,7 @@
             </mat-list>
             <mat-divider></mat-divider>
             <mat-list>
-                <div mat-subheader>Recent Topics</div>
+                <div mat-subheader>Recently Added Topics</div>
 
                 <mat-list-item *ngFor="let topic of homeData.recentTopicList">
                     <a [href]="this.getTopicPath(topic)">

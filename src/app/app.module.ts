@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -23,12 +22,12 @@ import { AboutComponent } from './details/about/about.component';
 import { SectionComponent } from './details/noteslist/section/section.component';
 import { TopicComponent } from './details/noteslist/section/topic/topic.component';
 import { NotesMenuComponent } from './menuframe/notes-menu/notes-menu.component';
+import { BlogMenuComponent } from './menuframe/blog-menu/blog-menu.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
     DetailsComponent,
     SlideComponent,
     HomePageComponent,
@@ -38,7 +37,8 @@ import { NotesMenuComponent } from './menuframe/notes-menu/notes-menu.component'
     AboutComponent,
     SectionComponent,
     TopicComponent,
-    NotesMenuComponent
+    NotesMenuComponent,
+    BlogMenuComponent
   ],
   imports: [
     BrowserModule,
