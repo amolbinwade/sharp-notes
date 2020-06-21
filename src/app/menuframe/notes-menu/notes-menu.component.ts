@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-notes-menu',
@@ -9,7 +10,9 @@ export class NotesMenuComponent implements OnInit {
 
   @Input() section;
 
-  constructor() { }
+  constructor(private router: Router) {
+    console.log(router.url);
+  }
 
   ngOnInit(): void {
   }
@@ -31,6 +34,8 @@ export class NotesMenuComponent implements OnInit {
 
   isExpanded(itemList){
     if(itemList.expanded == "true"){
+      return true;
+    } else if(this.router.url.includes(this.section.sectionId)) {
       return true;
     }
     return false;
